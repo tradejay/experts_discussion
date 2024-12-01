@@ -2,11 +2,12 @@ import logging
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
-from collections import Counter
+from collections import Counter, deque  # deque 추가
 import json
+import time  # time 모듈도 필요합니다
+import os    # os 모듈도 추가
 import google.generativeai as genai
 import streamlit as st
-
 
 # Constants
 MAX_RETRIES = 3
@@ -14,6 +15,8 @@ RETRY_DELAY = 2
 TOKEN_LIMIT = 7000
 API_RATE_LIMIT = 30
 API_TIME_WINDOW = 60
+
+# ... 나머지 코드 ...
 
 # 로깅 설정
 def setup_logging():
