@@ -1,0 +1,14 @@
+# API keys and sensitive data 
+gemini_api.txt 
+*_api.txt 
+.env 
+groq.md 
+groq_api*.txt 
+# Python 
+__pycache__/ 
+*.py[cod] 
+logs/ 
+profiles/ 
+# IDE specific files 
+.idea/ 
+.vscode/ 
